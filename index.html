@@ -35,9 +35,6 @@
     <label for="regId">Registration ID *</label>
     <input type="text" id="regId" name="Registration ID" required>
 
-    <label for="attachments">Attachments (optional)</label>
-    <input type="file" id="attachments" name="Attachments" multiple>
-
     <button type="submit">Submit Registration</button>
   </form>
   <div id="message"></div>
@@ -48,7 +45,7 @@
       const formData = new FormData(e.target);
 
       // IMPORTANT: paste your Apps Script /exec URL here:
-      const url = 'https://script.google.com/macros/s/AKfycbyXwqkC0qA5YWi7DjhZrzPUhaka_6mT-swegd2t3E5RmO8TzuqhhdYvAhHSXGDMSyPy/exec';
+      const url = 'https://script.google.com/macros/s/AKfycbx6GJZfcOzas1MvRdUbS5H4oYO2b5-q2QUdQf_742Xszw9R5VL9kR88ko-Ey78j8BQ1/exec';
 
       try {
         const response = await fetch(url, { method: 'POST', body: formData });
